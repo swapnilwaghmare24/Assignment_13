@@ -13,4 +13,11 @@ public class LargestNumberTest {
         assertEquals(8,actualReult);
 
     }
+    @Test
+    public void checkFloatLargest()
+    {
+        LargestNumber largestNumber = new LargestNumber();
+        float actualResult=largestNumber.inputNumber(5.2f,1.2f,9.3f);
+        assertEquals(9.3f,actualResult,0);
+    }
 }
