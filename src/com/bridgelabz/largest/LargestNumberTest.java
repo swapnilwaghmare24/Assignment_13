@@ -20,4 +20,12 @@ public class LargestNumberTest {
         float actualResult=largestNumber.inputNumber(5.2f,1.2f,9.3f);
         assertEquals(9.3f,actualResult,0);
     }
+
+    @Test
+    public void checkStringLargest()
+    {
+        LargestNumber largestNumber = new LargestNumber();
+        String actualResult=largestNumber.inputString("Apple","Peach","Banana");
+        assertEquals("Banana",actualResult);
+    }
 }
