@@ -28,4 +28,25 @@ public class LargestNumberTest {
         String actualResult=largestNumber.inputString("Apple","Peach","Banana");
         assertEquals("Banana",actualResult);
     }
+
+    @Test
+    public void checkLargestInt() {
+        LargestNumber<Integer> largestNumber = new LargestNumber<Integer>();
+        int actualResult = largestNumber.checkLargest(1, 5, 8);
+        assertEquals(8, actualResult);
+    }
+    @Test
+    public void checkLargestFloat() {
+        LargestNumber<Float> largestNumber = new LargestNumber<Float>();
+        float actualResult = largestNumber.checkLargest(3.5f, 1.8f, 2.2f);
+        assertEquals(3.5f, actualResult,0);
+    }
+    @Test
+    public void checkLargestString()
+    {
+        LargestNumber<String> largestNumber=new LargestNumber<String>();
+        String actualResult=largestNumber.checkLargest("Apple","Peach","Banana");
+        assertEquals("Banana",actualResult);
+
+    }
 }
